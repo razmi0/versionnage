@@ -1,4 +1,4 @@
-import { sum, multiplication } from '../calculator.js';
+import { sum, multiplication, division } from '../calculator.js';
 import { describe, it } from 'node:test';
 
 describe('Correct sum', () => {
