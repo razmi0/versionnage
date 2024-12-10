@@ -1,4 +1,4 @@
-import { sum, multiplication, division, modulo } from "../calculator.js";
+import { sum, multiplication, division, modulo, substract, isEven, isOdd } from "../calculator.js";
 import { describe, it } from "node:test";
 
 describe("Correct sum", () => {
@@ -29,6 +29,30 @@ describe("Correct modulo", () => {
   it("modulos 10 % 3 === 1", () => {
     if (modulo(10, 3) !== 1) {
       throw new Error("10 % 3 did not equal 1");
+    }
+  });
+});
+
+describe("Correct substract", () => {
+  it("substracts 10 - 3 === 7", () => {
+    if (substract(10, 3) !== 7) {
+      throw new Error("10 - 3 did not equal 7");
+    }
+  });
+});
+
+describe("Correct isOdd", () => {
+  it("checks if 3 is odd", () => {
+    if (!isOdd(3)) {
+      throw new Error("3 is odd");
+    }
+  });
+});
+
+describe("Correct isEven", () => {
+  it("checks if 4 is even", () => {
+    if (!isEven(4)) {
+      throw new Error("4 is even");
     }
   });
 });
