@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 
 describe("Correct sum", () => {
   it("adds 1 + 2 to equal 3", () => {
-    if (sum(1, 2) === 3) {
+    if (sum(1, 2) !== 3) {
       throw new Error("1 + 2 did not equal 3");
     }
   });
