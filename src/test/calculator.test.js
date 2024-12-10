@@ -1,4 +1,14 @@
-import { sum, multiplication, division, modulo, substract, isEven, isOdd, isFactorOf } from "../calculator.js";
+import {
+  sum,
+  multiplication,
+  division,
+  modulo,
+  substract,
+  isEven,
+  isOdd,
+  isFactorOf,
+  fibonnaci,
+} from "../calculator.js";
 import { describe, it } from "node:test";
 import { strictEqual } from "node:assert";
 
@@ -11,4 +21,5 @@ describe("Calculator function correctly", () => {
   it("ODD            : checks if 3 is odd", () => strictEqual(isOdd(3), true));
   it("EVEN           : checks if 4 is even", () => strictEqual(isEven(4), true));
   it("FACTOR OF      : checks if 3 is a factor of 6", () => strictEqual(isFactorOf(3, 6), true));
+  it("FIBONACCI      : returns 5th fibonnaci number", () => strictEqual(fibonnaci(5), 5));
 });
