@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "test": "node ./src/test/sum.test.js && node ./src/test/multiplication.test.js"
+    "test": "node ./src/test/calculator.test.js"
   },
   "name": "versionnage",
   "version": "1.0.0",
