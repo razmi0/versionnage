@@ -1,4 +1,4 @@
-import { sum, multiplication, division, modulo, substract, isEven, isOdd } from "../calculator.js";
+import { sum, multiplication, division, modulo, substract, isEven, isOdd, isFactorOf } from "../calculator.js";
 import { describe, it } from "node:test";
 
 describe("Correct sum", () => {
@@ -53,6 +53,14 @@ describe("Correct isEven", () => {
   it("checks if 4 is even", () => {
     if (!isEven(4)) {
       throw new Error("4 is even");
+    }
+  });
+});
+
+describe("Correct isFactorOf", () => {
+  it("checks if 3 is a factor of 6", () => {
+    if (!isFactorOf(3, 6)) {
+      throw new Error("3 is a factor of 6");
     }
   });
 });
