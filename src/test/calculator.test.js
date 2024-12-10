@@ -32,3 +32,27 @@ describe("Correct modulo", () => {
     }
   });
 });
+
+describe("Correct substract", () => {
+  it("substracts 10 - 3 === 7", () => {
+    if (substract(10, 3) !== 7) {
+      throw new Error("10 - 3 did not equal 7");
+    }
+  });
+});
+
+describe("Correct isOdd", () => {
+  it("checks if 3 is odd", () => {
+    if (!isOdd(3)) {
+      throw new Error("3 is odd");
+    }
+  });
+});
+
+describe("Correct isEven", () => {
+  it("checks if 4 is even", () => {
+    if (!isEven(4)) {
+      throw new Error("4 is even");
+    }
+  });
+});
