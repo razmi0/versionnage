@@ -9,11 +9,3 @@ describe("Correct multiplication", () => {
     }
   });
 });
-
-describe("Incorrect multiplication", () => {
-  it("multiplies 2 * 3 !== 5", () => {
-    if (multiplication(2, 3) !== 5) {
-      throw new Error("2 * 3 did not equal 5");
-    }
-  });
-});
