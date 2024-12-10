@@ -2,7 +2,9 @@
 
 ## Commit conventions
 
+```bash
 <type>(<scope>): <subject>
+```
 
 - `feat`: new feature for the user, not a new feature for build script
 - `fix`: bug fix for the user, not a fix to a build script
