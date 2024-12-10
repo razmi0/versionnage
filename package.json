@@ -7,5 +7,8 @@
   "version": "1.0.0",
   "description": "- commit 1 - commit 2",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "is-even": "^1.0.0"
+  }
 }
