@@ -23,3 +23,6 @@ describe("Calculator function correctly", () => {
   it("FACTOR OF      : checks if 3 is a factor of 6", () => strictEqual(isFactorOf(3, 6), true));
   it("FIBONACCI      : returns 5th fibonnaci number", () => strictEqual(fibonnaci(5), 5));
 });
+
+
+// Luc est passer par ici c'est le plus fort
